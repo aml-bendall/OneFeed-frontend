@@ -1,0 +1,134 @@
+/***** Header Styling *****/
+ion-header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .enhanced-toolbar {
+    --background: linear-gradient(135deg, var(--brand-primary, #0066cc), var(--brand-secondary, #00c853));
+    color: #ffffff;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ion-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .header-button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 15px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .header-button:hover {
+    color: var(--brand-accent, #ffc107);
+  }
+  
+  .signup-button {
+    background: #ffffff; /* White background */
+    color: var(--brand-primary, #0066cc); /* Blue text to match branding */
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 25px;
+    border: 2px solid var(--brand-primary, #0066cc); /* Blue border */
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .signup-button:hover {
+    background: var(--brand-primary, #0066cc); /* Invert to blue background */
+    color: #ffffff; /* White text */
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  /***** Promo Header Section *****/
+  .promo-header {
+    text-align: center;
+    padding: 70px 20px 50px;
+    background: linear-gradient(135deg, var(--brand-primary, #0066cc), var(--brand-secondary, #00c853));
+    color: #ffffff;
+  }
+  
+  .promo-header .cta-button {
+    background: var(--brand-accent, #ffc107);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .promo-header .cta-button:hover {
+    background: #ffb300;
+    transform: scale(1.05);
+  }
+  
+  /***** Promo Details Section *****/
+  .promo-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+  }
+  
+  .detail {
+    text-align: center;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .detail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .detail-icon {
+    font-size: 3rem;
+    color: var(--brand-primary, #0066cc);
+    margin-bottom: 15px;
+  }
+  
+  .detail h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .detail p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /***** Call-To-Action Section *****/
+  .promo-cta {
+    background: linear-gradient(135deg, var(--brand-secondary, #00c853), var(--brand-primary, #0066cc));
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 15px;
+  }
+  
+  .promo-cta .cta-button {
+    background: var(--brand-accent, #ffc107);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .promo-cta .cta-button:hover {
+    background: #ffb300;
+    transform: scale(1.05);
+  }
+  

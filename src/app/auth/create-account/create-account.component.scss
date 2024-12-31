@@ -1,0 +1,117 @@
+:host {
+    --primary-color: #1abc9c;
+    --secondary-color: #16a085;
+    --background-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: var(--background-gradient);
+  }
+  
+  .create-account-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .create-account-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  
+    h1 {
+      color: #34495e;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      color: #7f8c8d;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+  }
+  
+  ion-item {
+    --background: #ecf0f1;
+    --border-radius: 8px;
+    margin-bottom: 20px;
+  
+    ion-label {
+      color: #34495e;
+      font-weight: bold;
+    }
+  
+    ion-input {
+      --padding-start: 12px;
+      --padding-end: 12px;
+      color: #34495e;
+    }
+  
+    ion-input::placeholder {
+      color: #95a5a6;
+    }
+  }
+  
+  ion-button {
+    --background: var(--primary-color);
+    --color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  ion-button:hover {
+    --background: var(--secondary-color);
+  }
+  
+  .error-message {
+    margin-top: 10px;
+    color: #e74c3c;
+    font-size: 0.9rem;
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        text-decoration: underline;
+        color: var(--secondary-color);
+      }
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

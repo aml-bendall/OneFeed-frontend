@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar class="enhanced-toolbar">
+    <!-- Left: Brand -->
+    <ion-title (click)="navigateToDashboard()" class="dashboard-title">
+      OneFeed
+    </ion-title>
+
+    <!-- Right: Profile Actions -->
+    <ion-buttons slot="end">
+      <ion-button (click)="navigateToOptions()" class="header-button">
+        Settings
+      </ion-button>
+      <ion-button (click)="logout()" class="header-button">
+        Logout
+      </ion-button>
+      <ion-button>
+        <img [src]="profileImageUrl" alt="Profile" class="profile-image" />
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

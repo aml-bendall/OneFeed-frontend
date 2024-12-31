@@ -1,0 +1,34 @@
+<app-promo-header></app-promo-header>
+  <div class="create-account-page">
+  <div class="create-account-container">
+    <h1>Create an Account</h1>
+    <p>Join OneFeed to manage all your feeds in one place!</p>
+
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input [(ngModel)]="username" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="email" type="email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input [(ngModel)]="confirmPassword" type="password" required></ion-input>
+    </ion-item>
+
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+    <ion-button expand="block" (click)="register()">Sign Up</ion-button>
+    <p class="login-link">
+      Already have an account? <a routerLink="/login">Log in here.</a>
+    </p>
+  </div>
+</div>

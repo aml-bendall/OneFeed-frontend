@@ -1,0 +1,32 @@
+<app-dashboard-header></app-dashboard-header>
+
+<ion-content>
+  <div class="dashboard-container">
+    <div class="tab-container">
+      <!-- Tabs for each feed -->
+      <ion-button
+        *ngFor="let feed of linkedFeeds"
+        (click)="selectFeed(feed.name)"
+        [color]="selectedFeed === feed.name ? 'primary' : 'light'"
+      >
+        {{ feed.name }}
+      </ion-button>
+    </div>
+
+    <!-- Feed Content -->
+    <div class="feed-content">
+      <div *ngIf="selectedFeed === 'Facebook'">
+        <h2>Facebook Feed</h2>
+        <p>Content for Facebook feed...</p>
+      </div>
+      <div *ngIf="selectedFeed === 'Twitter'">
+        <h2>Twitter Feed</h2>
+        <p>Content for Twitter feed...</p>
+      </div>
+      <div *ngIf="selectedFeed === 'Instagram'">
+        <h2>Instagram Feed</h2>
+        <p>Content for Instagram feed...</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

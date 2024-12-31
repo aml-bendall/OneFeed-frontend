@@ -1,0 +1,53 @@
+/***** Header Styling *****/
+ion-header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-toolbar {
+  --background: linear-gradient(135deg, var(--brand-primary, #0066cc), var(--brand-secondary, #00c853));
+  color: #ffffff;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.dashboard-title:hover {
+  color: var(--brand-accent, #ffc107);
+}
+
+.header-button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-right: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  background: transparent;
+  border: none;
+}
+
+.header-button:hover {
+  color: var(--brand-accent, #ffc107);
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

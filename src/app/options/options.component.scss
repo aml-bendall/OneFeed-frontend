@@ -1,0 +1,155 @@
+.options-page {
+    --background-gradient: linear-gradient(135deg, var(--brand-primary, #0066cc), var(--brand-secondary, #00c853));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--background-gradient);
+    padding: 10px;
+  }
+  
+  .options-container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px; /* Adjusted for better desktop layout */
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    margin: auto;
+    margin-top: 15px;
+  }
+  
+  .options-container h1 {
+    font-size: 1.8rem;
+    color: var(--brand-primary, #0066cc);
+    margin-bottom: 15px;
+  }
+  
+  .options-container p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+  }
+  
+  .social-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Force 3x3 layout for desktops */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-item ion-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-item ion-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  ion-button {
+    width: 100%;
+    --border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .facebook-icon {
+    color: #3b5998;
+  }
+  
+  .twitter-icon {
+    color: #1da1f2;
+  }
+  
+  .instagram-icon {
+    color: #e4405f;
+  }
+  
+  .youtube-icon {
+    color: #ff0000;
+  }
+  
+  .tiktok-icon {
+    color: #000000;
+  }
+  
+  .linkedin-icon {
+    color: #0077b5;
+  }
+  
+  .snapchat-icon {
+    color: #fffc00;
+  }
+  
+  .twitch-icon {
+    color: #9146ff;
+  }
+  
+  .custom-dark-button {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  .custom-yellow-button {
+    background: #fffc00;
+    color: #000000;
+  }
+  
+  .custom-gray-button {
+    background: #b9b9b9;
+    color: #ffffff;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 1024px) {
+    .social-options {
+      grid-template-columns: repeat(2, 1fr); /* Switch to 2x2 for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .options-container {
+      padding: 20px;
+      width: 90%; /* Full width for smaller screens */
+    }
+  
+    .social-options {
+      grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+      gap: 15px;
+    }
+  
+    ion-button {
+      font-size: 0.9rem; /* Adjust button size */
+    }
+  
+    .options-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .options-container p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

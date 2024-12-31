@@ -1,0 +1,40 @@
+<ion-content>
+  <app-promo-header></app-promo-header>
+  <div class="login-container">
+    <h1>Welcome Back</h1>
+    <p>Please log in to access your account.</p>
+
+    <form (submit)="login()">
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input
+          type="text"
+          [(ngModel)]="username"
+          required
+          name="username"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input
+          type="password"
+          [(ngModel)]="password"
+          required
+          name="password"
+        ></ion-input>
+      </ion-item>
+
+      <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+      <ion-button expand="block" type="submit" class="login-button">
+        Log In
+      </ion-button>
+    </form>
+
+    <p class="signup-link">
+      Don’t have an account?
+      <a routerLink="/signup">Sign up</a>
+    </p>
+  </div>
+</ion-content>

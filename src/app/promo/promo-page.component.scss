@@ -1,0 +1,161 @@
+/***** Global Variables *****/
+:root {
+    --brand-primary: #0066cc; /* Vibrant blue */
+    --brand-secondary: #00c853; /* Bright green */
+    --brand-accent: #ffc107; /* Golden yellow */
+    --text-dark: #2c3e50; /* Dark charcoal */
+    --text-gray: #7f8c8d; /* Soft gray */
+    --background-light: #f9f9f9; /* Light background */
+    --background-alt: #eaf4fc; /* Alternate light blue background */
+    --button-hover: #005bb5; /* Darker blue for hover */
+    --shadow-light: rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  /***** Global Styles *****/
+  ion-content {
+    --background: var(--background-light);
+  }
+  
+  /***** Promo Header Section *****/
+  .promo-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+    color: #ffffff;
+  }
+  
+  .promo-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .promo-header p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  
+  .promo-header .cta-button {
+    background: var(--brand-accent);
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .promo-header .cta-button:hover {
+    background: var(--button-hover);
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+  
+  /***** Promo Details Section *****/
+  .promo-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background: var(--background-alt);
+  }
+  
+  .detail {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-light);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: black;
+  }
+  
+  .detail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px var(--shadow-light);
+  }
+  
+  .detail-icon {
+    font-size: 3rem;
+    color: var(--brand-primary);
+    margin-bottom: 15px;
+  }
+  
+  .detail h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+  }
+  
+  .detail p {
+    font-size: 1rem;
+    color: var(--text-gray);
+  }
+  
+  /***** Promo CTA Section *****/
+  .promo-cta {
+    background: linear-gradient(135deg, var(--brand-secondary), var(--brand-primary));
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 15px;
+  }
+  
+  .promo-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .promo-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .promo-cta .cta-button {
+    background: var(--brand-accent);
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: var(--text-dark);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .promo-cta .cta-button:hover {
+    background: #ffb300;
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+  
+  /***** Promo Transition Section *****/
+  .promo-transition {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--background-light);
+  }
+  
+  .promo-transition h2 {
+    font-size: 1.8rem;
+    color: var(--brand-primary);
+    margin-bottom: 15px;
+  }
+  
+  .promo-transition p {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    margin-bottom: 25px;
+  }
+  
+  .promo-transition .icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .promo-transition ion-icon {
+    font-size: 2.5rem;
+    color: var(--brand-secondary);
+    transition: transform 0.3s;
+  }
+  
+  .promo-transition ion-icon:hover {
+    transform: scale(1.2);
+  }
+  
